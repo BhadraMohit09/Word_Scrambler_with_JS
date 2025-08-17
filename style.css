@@ -1,230 +1,327 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  padding: 0 10px;
-  background: url("img/bgimage.jpg") no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 10px;
+    background: url("img/bgimage.jpg") no-repeat center center/cover;
 }
 
 .container {
-  color: #fff;
-  width: 440px;
-  border-radius: 15px;
-  background: rgba(255, 255, 255, 0.08); /* glass effect */
-  backdrop-filter: blur(20px);
-  box-shadow: 0 10px 40px rgba(12, 195, 180, 0.25);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 20px 0;
+    color: #fff;
+    width: 440px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.08);
+    /* glass effect */
+    backdrop-filter: blur(20px);
+    box-shadow: 0 10px 40px rgba(12, 195, 180, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px 0;
 }
 
 .title-container {
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 10px 15px;
-  gap: 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px 15px;
+    gap: 10px;
 }
 
 .round-img {
-  border-radius: 50%;
-  width: 35px;
-  height: 35px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
 }
 
 .title-container h2 {
-  font-size: 26px;
-  font-weight: 600;
-  flex: 1;
+    font-size: 26px;
+    font-weight: 600;
+    flex: 1;
 }
 
 .title-container .follow {
-  background: rgba(57, 167, 255, 0.2);
-  color: #39a7ff;
-  font-size: 13px;
-  font-weight: 500;
-  padding: 4px 8px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.3s ease;
+    background: rgba(57, 167, 255, 0.2);
+    color: #39a7ff;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .title-container .follow:hover {
-  background: rgba(57, 167, 255, 0.4);
-  transform: scale(1.05);
+    background: rgba(57, 167, 255, 0.4);
+    transform: scale(1.05);
 }
 
 .container .content {
-  margin: 20px 25px 35px;
+    margin: 20px 25px 35px;
 }
 
 .content .score p {
-  text-align: center;
-  font-size: 13px;
-  margin-bottom: 8px;
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 8px;
 }
 
 #scoreValue {
-  transition: all 0.3s ease;
-  color: #ccc;
+    transition: all 0.3s ease;
+    color: #ccc;
 }
 
 .content .word {
-  font-size: 34px;
-  font-weight: 600;
-  text-align: center;
-  letter-spacing: 22px;
-  margin-right: -22px;
-  text-transform: uppercase;
-  user-select: none;
-  text-shadow: 0 0 6px rgba(57, 167, 255, 0.6);
-  word-wrap: break-word;       /* wrap long words */
-  overflow-wrap: break-word;   /* fallback */
-  max-width: 100%;  
+    font-size: 34px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 22px;
+    margin-right: -22px;
+    text-transform: uppercase;
+    user-select: none;
+    text-shadow: 0 0 6px rgba(57, 167, 255, 0.6);
+    word-wrap: break-word;
+    /* wrap long words */
+    overflow-wrap: break-word;
+    /* fallback */
+    max-width: 100%;
 }
 
 .word-class-p {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 12px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
 }
 
 .word-class {
-  border-radius: 12px;
-  font-size: 11px;
-  padding: 5px 12px;
-  font-weight: 600;
-  text-transform: uppercase;
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
+    border-radius: 12px;
+    font-size: 11px;
+    padding: 5px 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
 }
 
 .content .details p {
-  font-size: 18px;
-  margin-bottom: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
 .content input {
-  width: 100%;
-  height: 50px;
-  padding: 0 16px;
-  font-size: 16px;
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  background: rgba(255, 255, 255, 0.08);
-  color: #fff;
-  backdrop-filter: blur(10px);
-  transition: all 0.3s ease;
+    width: 100%;
+    height: 50px;
+    padding: 0 16px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
 }
 
 .content input::placeholder {
-  color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .content input:focus {
-  border: 1px solid #39a7ff;
-  box-shadow: 0 0 10px rgba(57, 167, 255, 0.5);
+    border: 1px solid #39a7ff;
+    box-shadow: 0 0 10px rgba(57, 167, 255, 0.5);
 }
 
 .content .buttons {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 18px;
-  gap: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+    gap: 10px;
 }
 
 .buttons button {
-  width: calc(50% - 5px);
-  padding: 12px 0;
-  font-size: 15px;
-  font-weight: 500;
-  border-radius: 8px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  color: #fff;
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
+    width: calc(50% - 5px);
+    padding: 12px 0;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
 }
 
 .buttons button:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .buttons .refresh-word {
-  color: #ff6b6b;
-  border: 1px solid rgba(255, 107, 107, 0.6);
+    color: #ff6b6b;
+    border: 1px solid rgba(255, 107, 107, 0.6);
 }
 
 .buttons .check-word {
-  color: #39a7ff;
-  border: 1px solid rgba(57, 167, 255, 0.6);
+    color: #39a7ff;
+    border: 1px solid rgba(57, 167, 255, 0.6);
 }
 
 .footer {
-  width: 100%;
-  text-align: center;
-  padding: 12px 0;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(15px);
-  color: #fff;
-  font-size: 14px;
-  letter-spacing: 0.5px;
-  box-shadow: 0 -5px 15px rgba(12, 195, 180, 0.2);
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  z-index: 10;
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    box-shadow: 0 -5px 15px rgba(12, 195, 180, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    z-index: 10;
 }
 
 .footer p {
-  margin: 0;
-  font-weight: 500;
+    margin: 0;
+    font-weight: 500;
 }
 
-#message{
+#message {
     font-size: 16px;
     margin-top: 4px;
     padding: 1px;
 }
+
 /* Feedback and animations */
-.partial-correct { border-bottom: 2px solid #4CAF50 !important; }
-.shake { animation: shake 0.5s linear; }
-@keyframes shake { 0%,100%{transform:translateX(0);}25%{transform:translateX(-5px);}75%{transform:translateX(5px);} }
-.score-update { transform: scale(1.2); color: #39A7FF !important; transition: all 0.3s ease; }
-.celebrate-word { font-size: 1.1em; color: #FFD700; animation: pulse 1s infinite; }
-@keyframes pulse {0%,100%{opacity:1;}50%{opacity:0.7;}}
-input.correct { border-color: limegreen; background-color: rgba(0,255,0,0.15); box-shadow: 0 0 8px limegreen;}
-input.incorrect { border-color: red; background-color: rgba(255,0,0,0.15); box-shadow: 0 0 8px red;}
-input.flash { animation: flash 2s; background-color: rgba(255,255,0,0.2);}
-@keyframes flash {0%{opacity:1;}50%{opacity:0.5;}100%{opacity:1;}}
+.partial-correct {
+    border-bottom: 2px solid #4CAF50 !important;
+}
+
+.shake {
+    animation: shake 0.5s linear;
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    75% {
+        transform: translateX(5px);
+    }
+}
+
+.score-update {
+    transform: scale(1.2);
+    color: #39A7FF !important;
+    transition: all 0.3s ease;
+}
+
+.celebrate-word {
+    font-size: 1.1em;
+    color: #FFD700;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+}
+
+input.correct {
+    border-color: limegreen;
+    background-color: rgba(0, 255, 0, 0.15);
+    box-shadow: 0 0 8px limegreen;
+}
+
+input.incorrect {
+    border-color: red;
+    background-color: rgba(255, 0, 0, 0.15);
+    box-shadow: 0 0 8px red;
+}
+
+input.flash {
+    animation: flash 2s;
+    background-color: rgba(255, 255, 0, 0.2);
+}
+
+@keyframes flash {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 
 /* Responsive */
-@media screen and (max-width:470px){
-  .container { width: 95%; }
-  .container h2 { font-size: 22px; }
-  .content .word { font-size: 30px; letter-spacing: 18px; margin-right: -18px; }
-  .title-container .follow { font-size: 11px; padding: 3px 6px; }
-  .content input { height: 45px; font-size: 15px; }
-  .buttons button { font-size: 14px; padding: 10px 0; }
-  .details p { font-size: 16px; }
+@media screen and (max-width:470px) {
+    .container {
+        width: 95%;
+    }
+
+    .container h2 {
+        font-size: 22px;
+    }
+
+    .content .word {
+        font-size: 30px;
+        letter-spacing: 18px;
+        margin-right: -18px;
+    }
+
+    .title-container .follow {
+        font-size: 11px;
+        padding: 3px 6px;
+    }
+
+    .content input {
+        height: 45px;
+        font-size: 15px;
+    }
+
+    .buttons button {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+
+    .details p {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 470px) {
-  .content .word {
-    letter-spacing: 16px;
-    font-size: 28px;
-  }
+    .content .word {
+        letter-spacing: 16px;
+        font-size: 28px;
+    }
 }
