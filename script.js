@@ -165,7 +165,7 @@ window.checkWord = () => {
   const timeLeft = parseInt(timeText.innerText);
   clearInterval(timer);
   inputField.classList.add("correct");
-  messageElement.innerHTML = `🎉 <span style="color: #39A7FF;">${correctWord.toUpperCase()}</span> is correct!`;
+  messageElement.innerHTML = `🎉 <span style="color: #39A7FF;">${correctWord.toUpperCase()}</span> is correct! 🎉`;
 
   updateScore(timeLeft);
   showScoreWord();

@@ -1013,5 +1013,6 @@ let words = [
         word: "Pandemonium",
         hint: "Wild uproar",
         difficulty: "rare"
-    }
+    },
+    
 ];
