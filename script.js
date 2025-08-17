@@ -19,7 +19,7 @@ const scoreWords = [
 // Initialize game with dynamic timer based on word difficulty
 const initTimer = () => {
   clearInterval(timer);
-  const timeMap = { common: 20, rare: 25, exclusive: 30, legendary: 35 };
+  const timeMap = { common: 15, rare: 20, exclusive: 30, legendary: 35 };
   const wordClass = wordClassElement.innerText.toLowerCase();
   let maxTime = timeMap[wordClass] || 30;
 

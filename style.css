@@ -194,7 +194,11 @@ body {
   font-weight: 500;
 }
 
-
+#message{
+    font-size: 16px;
+    margin-top: 4px;
+    padding: 1px;
+}
 /* Feedback and animations */
 .partial-correct { border-bottom: 2px solid #4CAF50 !important; }
 .shake { animation: shake 0.5s linear; }
